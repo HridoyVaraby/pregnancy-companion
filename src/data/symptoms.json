@@ -1,202 +1,1545 @@
 [
   {
-    "id": "rd-lig-01",
-    "name": "Round Ligament Pain",
-    "keywords": ["sharp pain", "side pain", "stretching", "sneeze", "groin", "stabbing pain", "lower belly pain"],
-    "severity": "low",
-    "is_normal": true,
-    "advice": "Normal stretching of the uterus. Move slowly, try pelvic tilts, and rest on your side."
-  },
-  {
-    "id": "pre-01",
+    "id": "em-01",
     "name": "Preeclampsia Warning",
-    "keywords": ["blurred vision", "severe headache", "swelling", "upper pain", "seeing spots", "face swelling", "sudden weight gain", "high blood pressure"],
-    "severity": "high",
+    "category": "Emergency",
+    "keywords": [
+      "blurred vision",
+      "severe headache",
+      "swelling",
+      "upper pain",
+      "seeing spots",
+      "face swelling",
+      "sudden weight gain",
+      "high blood pressure",
+      "right side pain under ribs",
+      "swollen hands",
+      "vision changes"
+    ],
+    "trimester": [
+      2,
+      3
+    ],
     "is_normal": false,
-    "advice": "URGENT: This can be a sign of preeclampsia, a serious condition. Contact your healthcare provider or go to the emergency room immediately."
-  },
-  {
-    "id": "nausea-01",
-    "name": "Morning Sickness / Nausea",
-    "keywords": ["nausea", "vomiting", "throwing up", "queasy", "sick to stomach", "morning sickness"],
-    "severity": "low",
-    "is_normal": true,
-    "advice": "Very common, especially in the first trimester. Eat small, frequent meals, try ginger or vitamin B6. If you cannot keep any fluids down for 24 hours, contact your doctor as this may be Hyperemesis Gravidarum."
-  },
-  {
-    "id": "fatigue-01",
-    "name": "Fatigue",
-    "keywords": ["tired", "exhausted", "sleepy", "no energy", "fatigue", "lethargic"],
-    "severity": "low",
-    "is_normal": true,
-    "advice": "Normal due to hormonal changes. Rest when you can, eat a balanced diet, and listen to your body."
-  },
-  {
-    "id": "braxton-01",
-    "name": "Braxton Hicks Contractions",
-    "keywords": ["tightening", "fake contractions", "belly hard", "painless contractions", "practice contractions"],
-    "severity": "low",
-    "is_normal": true,
-    "advice": "These are 'practice' contractions and are usually irregular and painless. Drink water and change positions. If they become regular, painful, or occur more than 4-6 times an hour before 37 weeks, contact your doctor."
-  },
-  {
-    "id": "preterm-01",
-    "name": "Preterm Labor Signs",
-    "keywords": ["regular contractions", "water broke", "pelvic pressure", "leaking fluid", "back pain rhythmic", "cramping before 37 weeks"],
     "severity": "high",
-    "is_normal": false,
-    "advice": "URGENT: These are signs of preterm labor. Contact your healthcare provider or head to labor and delivery immediately."
+    "description": "Preeclampsia is a serious blood pressure condition that can happen after the 20th week of pregnancy or after giving birth.",
+    "advice": "URGENT: This can be a sign of preeclampsia, a serious condition. Contact your healthcare provider or go to the emergency room immediately.",
+    "red_flags": [
+      "Severe headache that won't go away with medication",
+      "Changes in vision, including temporary loss of vision, blurred vision or light sensitivity",
+      "Pain in your upper belly, usually under your ribs on the right side"
+    ]
   },
   {
-    "id": "movement-01",
+    "id": "em-02",
     "name": "Decreased Fetal Movement",
-    "keywords": ["baby not moving", "less kicks", "decreased movement", "stopped kicking", "quiet baby"],
-    "severity": "high",
+    "category": "Emergency",
+    "keywords": [
+      "baby not moving",
+      "decreased movement",
+      "no kicking",
+      "kick count low",
+      "quiet baby",
+      "not active",
+      "baby is still",
+      "can't feel baby"
+    ],
+    "trimester": [
+      2,
+      3
+    ],
     "is_normal": false,
-    "advice": "URGENT: A noticeable decrease in fetal movement requires immediate medical evaluation. Go to labor and delivery or contact your doctor right away."
+    "severity": "high",
+    "description": "A noticeable decrease in your baby's movements can sometimes indicate that they are distressed.",
+    "advice": "Drink something cold and sugary, lie on your left side in a quiet room, and do a kick count. If you feel fewer than 10 movements in 2 hours, contact your doctor or go to L&D immediately.",
+    "red_flags": [
+      "Fewer than 10 movements in 2 hours",
+      "No movement all day",
+      "A sudden, drastic change in movement patterns"
+    ]
   },
   {
-    "id": "heartburn-01",
-    "name": "Heartburn & Acid Reflux",
-    "keywords": ["heartburn", "acid", "reflux", "burning chest", "indigestion"],
-    "severity": "low",
+    "id": "em-03",
+    "name": "Vaginal Bleeding",
+    "category": "Emergency",
+    "keywords": [
+      "bleeding",
+      "blood",
+      "spotting",
+      "red blood",
+      "hemorrhage",
+      "heavy bleeding",
+      "clots"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": false,
+    "severity": "high",
+    "description": "While light spotting can sometimes be normal, especially early on, bleeding can indicate miscarriage, ectopic pregnancy, placental abruption, or placenta previa.",
+    "advice": "Contact your doctor immediately. Put on a pad to monitor the amount of bleeding.",
+    "red_flags": [
+      "Bleeding that is heavy enough to soak through a pad",
+      "Bleeding accompanied by pain or cramping",
+      "Passing tissue or clots"
+    ]
+  },
+  {
+    "id": "em-04",
+    "name": "Preterm Labor Contractions",
+    "category": "Emergency",
+    "keywords": [
+      "early contractions",
+      "regular cramping",
+      "tightening",
+      "pelvic pressure",
+      "lower back pain comes and goes",
+      "cramps like period",
+      "water broke early",
+      "contractions before 37 weeks"
+    ],
+    "trimester": [
+      2,
+      3
+    ],
+    "is_normal": false,
+    "severity": "high",
+    "description": "Regular contractions that cause your cervix to open before 37 weeks of pregnancy.",
+    "advice": "Empty your bladder, drink 2-3 large glasses of water, and lie down on your left side for an hour. If you have more than 4-6 contractions in an hour, call your doctor.",
+    "red_flags": [
+      "Contractions that get closer together, stronger, and longer",
+      "Leaking fluid",
+      "Vaginal bleeding"
+    ]
+  },
+  {
+    "id": "em-05",
+    "name": "Leaking Amniotic Fluid",
+    "category": "Emergency",
+    "keywords": [
+      "water broke",
+      "leaking fluid",
+      "gush of fluid",
+      "constant trickle",
+      "wet underwear",
+      "rupture of membranes",
+      "prom"
+    ],
+    "trimester": [
+      2,
+      3
+    ],
+    "is_normal": false,
+    "severity": "high",
+    "description": "The sac holding the baby breaks or leaks before labor starts.",
+    "advice": "Put on a pad to monitor the fluid. Do not use a tampon. Call your healthcare provider or go to the hospital.",
+    "red_flags": [
+      "Fluid is green, yellow, or brown (sign of meconium)",
+      "Foul-smelling fluid",
+      "Accompanied by fever or decreased fetal movement"
+    ]
+  },
+  {
+    "id": "cm-01",
+    "name": "Morning Sickness",
+    "category": "Digestive",
+    "keywords": [
+      "nausea",
+      "vomiting",
+      "throwing up",
+      "queasy",
+      "sick to stomach",
+      "morning sickness",
+      "barfing",
+      "can't keep food down",
+      "food aversion"
+    ],
+    "trimester": [
+      1
+    ],
     "is_normal": true,
-    "advice": "Common in pregnancy due to hormones and physical pressure. Avoid spicy/greasy foods, eat smaller meals, and don't lie down right after eating. Consult your doctor for safe antacids."
-  },
-  {
-    "id": "swelling-01",
-    "name": "Mild Edema (Swelling)",
-    "keywords": ["swollen feet", "swollen ankles", "puffy feet", "edema"],
     "severity": "low",
+    "description": "Nausea and vomiting during pregnancy, often triggered by hormonal changes. Despite the name, it can happen at any time of day.",
+    "advice": "1. Eat small, frequent meals.\n2. Keep crackers by your bed and eat a few before getting up.\n3. Try ginger tea, candies, or supplements.\n4. Ask your doctor about Vitamin B6 and Unisom.",
+    "red_flags": [
+      "Unable to keep fluids down for 24 hours",
+      "Weight loss",
+      "Signs of dehydration (dark urine, dizziness)"
+    ]
+  },
+  {
+    "id": "cm-02",
+    "name": "Fatigue",
+    "category": "Common Ailments",
+    "keywords": [
+      "tired",
+      "exhausted",
+      "sleepy",
+      "no energy",
+      "fatigue",
+      "lethargic",
+      "wiped out",
+      "drained",
+      "need a nap"
+    ],
+    "trimester": [
+      1,
+      3
+    ],
     "is_normal": true,
-    "advice": "Mild swelling in the feet and ankles is normal. Elevate your feet, wear comfortable shoes, and stay hydrated. If swelling is sudden, severe, or in your hands/face, it could be a sign of preeclampsia (contact doctor)."
+    "severity": "low",
+    "description": "Extreme tiredness caused by a massive increase in progesterone levels, increased blood production, and the physical demands of growing a baby.",
+    "advice": "1. Listen to your body and rest when you need to.\n2. Go to bed earlier.\n3. Eat iron-rich foods to prevent anemia.\n4. Delegate tasks when possible.",
+    "red_flags": [
+      "Fatigue accompanied by severe shortness of breath",
+      "Fainting or severe dizziness",
+      "Palpitations"
+    ]
   },
   {
-    "id": "dvt-01",
-    "name": "Deep Vein Thrombosis (Blood Clot)",
-    "keywords": ["severe leg pain", "calf pain", "red leg", "hot calf", "one leg swollen"],
-    "severity": "high",
-    "is_normal": false,
-    "advice": "URGENT: Pain, redness, and swelling in one leg (often the calf) can be a sign of a blood clot. Seek emergency medical care immediately."
-  },
-  {
-    "id": "bleeding-01",
-    "name": "Vaginal Bleeding (Severe)",
-    "keywords": ["heavy bleeding", "red blood", "passing clots", "gushing blood", "hemorrhage"],
-    "severity": "high",
-    "is_normal": false,
-    "advice": "URGENT: Heavy or bright red vaginal bleeding is an emergency. Contact your doctor or go to the emergency room immediately."
-  },
-  {
-    "id": "spotting-01",
-    "name": "Light Spotting",
-    "keywords": ["spotting", "brown discharge", "pink discharge", "light bleeding"],
-    "severity": "medium",
-    "is_normal": false,
-    "advice": "Light spotting can be common, especially early in pregnancy, but should always be evaluated by a healthcare professional to rule out complications. Call your doctor."
-  },
-  {
-    "id": "uti-01",
-    "name": "Urinary Tract Infection",
-    "keywords": ["burning pee", "pain when urinating", "frequent peeing but little comes out", "blood in urine", "uti"],
-    "severity": "medium",
-    "is_normal": false,
-    "advice": "May indicate a UTI, which needs treatment during pregnancy to prevent kidney infections. Contact your doctor for a urine test."
-  },
-  {
-    "id": "urination-01",
+    "id": "cm-03",
     "name": "Frequent Urination",
-    "keywords": ["peeing a lot", "always need to pee", "frequent bathroom trips"],
-    "severity": "low",
+    "category": "Common Ailments",
+    "keywords": [
+      "peeing a lot",
+      "always need to pee",
+      "bathroom trips",
+      "frequent peeing",
+      "bladder pressure",
+      "waking up to pee"
+    ],
+    "trimester": [
+      1,
+      3
+    ],
     "is_normal": true,
-    "advice": "Very normal as the uterus presses on the bladder. Keep drinking plenty of water, but if it's accompanied by burning or pain, call your doctor."
-  },
-  {
-    "id": "ectopic-01",
-    "name": "Ectopic Pregnancy Warning",
-    "keywords": ["severe unilateral pain", "shoulder pain", "sharp pain early pregnancy", "dizziness and pain"],
-    "severity": "high",
-    "is_normal": false,
-    "advice": "URGENT: Severe pain on one side early in pregnancy, sometimes with shoulder pain or dizziness, can indicate an ectopic pregnancy. Seek emergency care immediately."
-  },
-  {
-    "id": "cholestasis-01",
-    "name": "Cholestasis of Pregnancy",
-    "keywords": ["severe itching", "itchy hands", "itchy feet", "itching no rash", "intense itch"],
-    "severity": "high",
-    "is_normal": false,
-    "advice": "URGENT: Severe itching, particularly on the palms of hands and soles of feet without a rash, can indicate a liver condition called Cholestasis. Contact your doctor immediately for a blood test."
-  },
-  {
-    "id": "backache-01",
-    "name": "Lower Back Pain",
-    "keywords": ["backache", "lower back pain", "sore back", "aching back"],
     "severity": "low",
-    "is_normal": true,
-    "advice": "Normal due to shifting center of gravity and relaxing ligaments. Practice good posture, use supportive shoes, and try prenatal yoga or a heating pad (on low)."
+    "description": "In the 1st trimester, increased blood flow to the kidneys causes it. In the 3rd trimester, the baby's head presses on the bladder.",
+    "advice": "1. Lean forward when you pee to empty your bladder completely.\n2. Limit caffeine.\n3. Stop drinking fluids a couple of hours before bed, but stay hydrated during the day.",
+    "red_flags": [
+      "Pain or burning when you pee (sign of UTI)",
+      "Urine has a strong, foul odor",
+      "Blood in urine"
+    ]
   },
   {
-    "id": "sciatica-01",
+    "id": "cm-04",
+    "name": "Breast Changes",
+    "category": "Physical",
+    "keywords": [
+      "sore boobs",
+      "tender breasts",
+      "heavy breasts",
+      "dark nipples",
+      "veiny boobs",
+      "breast pain",
+      "nipple pain"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Hormones cause breasts to grow, become tender, and prepare for milk production. Veins may become more prominent and areolas may darken.",
+    "advice": "1. Wear a supportive, well-fitting bra without underwire.\n2. Use a sleep bra at night for extra support.\n3. Apply a warm or cool compress for pain relief.",
+    "red_flags": [
+      "A hard, localized lump",
+      "Redness, warmth, and fever (signs of mastitis)",
+      "Bloody discharge from the nipple"
+    ]
+  },
+  {
+    "id": "cm-05",
+    "name": "Food Cravings and Aversions",
+    "category": "Digestive",
+    "keywords": [
+      "cravings",
+      "food aversion",
+      "disgusted by food",
+      "wanting weird food",
+      "hungry all the time",
+      "can't stand the smell of"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Hormonal shifts can cause you to strongly desire certain foods or feel repulsed by foods you usually like.",
+    "advice": "1. Give in to cravings in moderation, as long as the food is safe for pregnancy.\n2. Focus on eating whatever sounds palatable if you have strong aversions.\n3. Sneak nutrients into foods you can tolerate (e.g., spinach in a smoothie).",
+    "red_flags": [
+      "Craving non-food items like dirt, clay, or chalk (Pica - tell your doctor)",
+      "Severe weight loss due to aversions"
+    ]
+  },
+  {
+    "id": "pn-01",
+    "name": "Round Ligament Pain",
+    "category": "Physical Pains",
+    "keywords": [
+      "sharp pain",
+      "side pain",
+      "stretching",
+      "sneeze",
+      "groin",
+      "stabbing pain",
+      "lower belly pain",
+      "quick pain when rolling over",
+      "side stitch"
+    ],
+    "trimester": [
+      2
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Sharp, sudden pain in the lower belly or groin caused by the stretching of the ligaments that support the growing uterus.",
+    "advice": "1. Move slowly, especially when changing positions.\n2. Bend and flex your hips when you sneeze or cough to reduce the pull.\n3. A warm (not hot) bath can help relax the muscles.\n4. Consider a maternity support belt.",
+    "red_flags": [
+      "Pain that doesn't go away after a few minutes of rest",
+      "Pain accompanied by bleeding, cramping, or fever",
+      "Severe pain that makes it hard to walk"
+    ]
+  },
+  {
+    "id": "pn-02",
     "name": "Sciatica",
-    "keywords": ["shooting pain leg", "buttock pain", "numb leg", "tingling leg", "sciatica"],
-    "severity": "medium",
-    "is_normal": false,
-    "advice": "Pressure on the sciatic nerve can cause shooting pain down the leg. Talk to your doctor or a physical therapist for safe stretches and relief options."
-  },
-  {
-    "id": "constipation-01",
-    "name": "Constipation",
-    "keywords": ["can't poop", "hard stool", "constipated", "bloated"],
-    "severity": "low",
+    "category": "Physical Pains",
+    "keywords": [
+      "nerve pain",
+      "shooting pain down leg",
+      "butt pain",
+      "numb leg",
+      "tingling leg",
+      "back of thigh pain"
+    ],
+    "trimester": [
+      2,
+      3
+    ],
     "is_normal": true,
-    "advice": "Hormones slow down digestion. Drink lots of water, eat high-fiber foods, and stay active. Consult your doctor before taking any laxatives."
-  },
-  {
-    "id": "breasts-01",
-    "name": "Breast Tenderness",
-    "keywords": ["sore breasts", "tender nipples", "heavy breasts", "sensitive breasts"],
     "severity": "low",
+    "description": "Pain radiating from the lower back down the back of the leg, caused by the expanding uterus or baby pressing on the sciatic nerve.",
+    "advice": "1. Sleep on your side with a pillow between your knees.\n2. Try prenatal yoga or gentle stretching.\n3. Use a warm compress on the lower back or buttocks.\n4. See a physical therapist or chiropractor experienced in pregnancy.",
+    "red_flags": [
+      "Loss of feeling in your leg or foot",
+      "Weakness in your leg",
+      "Loss of bowel or bladder control"
+    ]
+  },
+  {
+    "id": "pn-03",
+    "name": "Pelvic Girdle Pain (SPD)",
+    "category": "Physical Pains",
+    "keywords": [
+      "pubic bone pain",
+      "pelvic pain",
+      "crotch pain",
+      "hurts to walk",
+      "pain spreading legs",
+      "spd",
+      "symphysis pubis dysfunction",
+      "vagina hurts"
+    ],
+    "trimester": [
+      2,
+      3
+    ],
     "is_normal": true,
-    "advice": "Very normal, often one of the first signs of pregnancy. Wear a supportive, comfortable bra (like a sports bra or maternity bra)."
-  },
-  {
-    "id": "yeast-01",
-    "name": "Yeast Infection",
-    "keywords": ["vaginal itching", "white discharge", "clumpy discharge", "cottage cheese discharge"],
     "severity": "medium",
-    "is_normal": false,
-    "advice": "Yeast infections are common in pregnancy due to pH changes. Contact your doctor for a safe over-the-counter or prescription treatment."
+    "description": "Pain in the pubic joint or pelvic region caused by the hormone relaxin making the pelvic joints too loose or unstable.",
+    "advice": "1. Keep your knees together when getting in/out of the car or bed.\n2. Avoid pushing heavy objects or standing on one leg.\n3. Wear a pelvic support belt.\n4. Ask for a referral to a pelvic floor physical therapist.",
+    "red_flags": [
+      "Pain so severe you cannot walk",
+      "Signs of a urinary tract infection"
+    ]
   },
   {
-    "id": "anemia-01",
-    "name": "Anemia / Iron Deficiency",
-    "keywords": ["dizzy", "lightheaded", "pale", "weak", "fainting"],
-    "severity": "medium",
-    "is_normal": false,
-    "advice": "Dizziness and weakness can be signs of anemia (low iron) or low blood sugar. Sit or lie down immediately. Contact your doctor to have your iron levels checked."
+    "id": "pn-04",
+    "name": "Backaches",
+    "category": "Physical Pains",
+    "keywords": [
+      "lower back pain",
+      "sore back",
+      "aching back",
+      "back hurts",
+      "lumbar pain"
+    ],
+    "trimester": [
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Caused by weight gain, changes in posture as the baby grows, and hormones relaxing the ligaments in the joints of your pelvis.",
+    "advice": "1. Practice good posture and wear supportive shoes.\n2. Lift with your legs, not your back.\n3. Get a prenatal massage or use a heating pad on the lowest setting.\n4. Sleep on your side with a pregnancy pillow.",
+    "red_flags": [
+      "Rhythmic back pain that comes and goes (could be preterm labor)",
+      "Severe back pain accompanied by fever or bleeding",
+      "Numbness in your legs"
+    ]
   },
   {
-    "id": "carpal-01",
+    "id": "pn-05",
     "name": "Carpal Tunnel Syndrome",
-    "keywords": ["numb hands", "tingling fingers", "wrist pain", "hands falling asleep"],
-    "severity": "low",
+    "category": "Physical Pains",
+    "keywords": [
+      "numb hands",
+      "tingling fingers",
+      "wrist pain",
+      "hands falling asleep",
+      "clumsy hands",
+      "weak grip",
+      "pins and needles in hands"
+    ],
+    "trimester": [
+      2,
+      3
+    ],
     "is_normal": true,
-    "advice": "Swelling in pregnancy can compress nerves in the wrist. Try wrist splints, especially at night, and mention it to your doctor at your next visit."
+    "severity": "low",
+    "description": "Swelling and fluid retention during pregnancy can put pressure on the median nerve in the wrist, causing numbness and pain in the hands.",
+    "advice": "1. Wear wrist splints, especially at night.\n2. Try to keep your wrists straight while sleeping or typing.\n3. Shake out your hands or soak them in cold water to reduce swelling.\n4. Take frequent breaks if doing repetitive hand motions.",
+    "red_flags": [
+      "Severe pain that wakes you up and isn't relieved by splints",
+      "Loss of muscle in the base of the thumb"
+    ]
   },
   {
-    "id": "headache-01",
-    "name": "Mild Headaches",
-    "keywords": ["headache", "head hurts", "tension headache"],
-    "severity": "low",
+    "id": "dg-01",
+    "name": "Heartburn and Indigestion",
+    "category": "Digestive",
+    "keywords": [
+      "chest burn",
+      "acid",
+      "spicy feeling",
+      "indigestion",
+      "throat burn",
+      "acid reflux",
+      "gerd",
+      "burping acid"
+    ],
+    "trimester": [
+      2,
+      3
+    ],
     "is_normal": true,
-    "advice": "Common due to hormones, stress, or dehydration. Drink water, rest, and try a cold compress. If the headache is severe and doesn't go away, it could be a sign of preeclampsia—contact your doctor."
+    "severity": "low",
+    "description": "Pregnancy hormones relax the valve between the stomach and esophagus, allowing acid to leak up. Later, the growing baby pushes stomach acid upward.",
+    "advice": "1. Eat smaller, more frequent meals.\n2. Avoid spicy, greasy, or highly acidic foods.\n3. Don't lie down right after eating; wait at least 2 hours.\n4. Ask your doctor about safe antacids (like Tums).",
+    "red_flags": [
+      "Severe chest pain that doesn't feel like normal heartburn",
+      "Difficulty swallowing",
+      "Vomiting blood or black material"
+    ]
   },
   {
-    "id": "depression-01",
-    "name": "Prenatal Depression / Anxiety",
-    "keywords": ["sad", "crying", "anxious", "panic", "hopeless", "depressed"],
+    "id": "dg-02",
+    "name": "Constipation",
+    "category": "Digestive",
+    "keywords": [
+      "can't poop",
+      "hard stool",
+      "straining",
+      "backed up",
+      "constipated",
+      "bowel movement hard",
+      "poop hurts"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "An increase in progesterone slows down the digestive system to extract more nutrients for the baby. Iron supplements can also contribute.",
+    "advice": "1. Drink plenty of water (8-12 cups a day).\n2. Increase fiber intake (fruits, vegetables, whole grains).\n3. Get regular, gentle exercise like walking.\n4. Ask your doctor about a safe stool softener or switching iron supplements.",
+    "red_flags": [
+      "Severe abdominal pain",
+      "Blood in your stool",
+      "No bowel movement for several days despite trying remedies"
+    ]
+  },
+  {
+    "id": "dg-03",
+    "name": "Bloating and Gas",
+    "category": "Digestive",
+    "keywords": [
+      "gassy",
+      "farting",
+      "bloated",
+      "tight belly",
+      "stomach feels full",
+      "wind",
+      "burping"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Increased progesterone relaxes the smooth muscle tissue in your body, including your gastrointestinal tract, which slows digestion and leads to bloating and gas.",
+    "advice": "1. Eat slowly and chew your food thoroughly.\n2. Avoid foods that typically cause you gas (e.g., beans, cabbage, carbonated drinks).\n3. Gentle exercise can help move gas through your system.\n4. Eat smaller, more frequent meals.",
+    "red_flags": [
+      "Severe, cramping abdominal pain",
+      "Diarrhea or vomiting that won't stop"
+    ]
+  },
+  {
+    "id": "dg-04",
+    "name": "Hemorrhoids",
+    "category": "Digestive",
+    "keywords": [
+      "painful poop",
+      "blood when wiping",
+      "itchy anus",
+      "bum pain",
+      "piles",
+      "swollen veins in bottom"
+    ],
+    "trimester": [
+      2,
+      3
+    ],
+    "is_normal": true,
     "severity": "medium",
-    "is_normal": false,
-    "advice": "Mental health struggles during pregnancy are common but require support. Please talk to your healthcare provider or a mental health professional for help and resources."
+    "description": "Swollen veins in the rectum or anus caused by the pressure of the growing uterus and increased blood volume. Often worsened by constipation.",
+    "advice": "1. Prevent constipation by eating fiber and drinking water.\n2. Don't strain during bowel movements.\n3. Soak in a warm bath (sitz bath) or use witch hazel pads.\n4. Ask your doctor about safe topical treatments.",
+    "red_flags": [
+      "Heavy bleeding from the rectum",
+      "Severe pain that makes it impossible to sit",
+      "A hard lump that is very painful"
+    ]
+  },
+  {
+    "id": "dg-05",
+    "name": "Metallic Taste (Dysgeusia)",
+    "category": "Digestive",
+    "keywords": [
+      "pennies in mouth",
+      "metal taste",
+      "weird taste",
+      "bad taste",
+      "sour taste",
+      "dysgeusia",
+      "tastes like coins"
+    ],
+    "trimester": [
+      1
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "A common early pregnancy symptom caused by the surge of estrogen, which can affect your sense of taste.",
+    "advice": "1. Try eating citrus fruits or drinking lemonade to cut the metallic taste.\n2. Use plastic silverware instead of metal.\n3. Brush your tongue when you brush your teeth.\n4. Chew sugarless gum or suck on hard candies.",
+    "red_flags": [
+      "Usually harmless, but mention it to your doctor if it prevents you from eating or drinking entirely."
+    ]
+  },
+  {
+    "id": "sk-01",
+    "name": "Linea Nigra",
+    "category": "Skin/Hair",
+    "keywords": [
+      "dark line on belly",
+      "stomach line",
+      "belly line",
+      "brown line"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "A dark vertical line that appears down the center of your belly due to increased melanin production from pregnancy hormones.",
+    "advice": "Use sunscreen, wear a hat, and avoid excessive sun exposure. It usually fades postpartum.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "sk-02",
+    "name": "Stretch Marks",
+    "category": "Skin/Hair",
+    "keywords": [
+      "tiger stripes",
+      "red lines on belly",
+      "striae",
+      "belly marks",
+      "skin stretching"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Red, pink, or purple streaks that appear on the belly, breasts, or thighs as the skin stretches to accommodate the growing baby.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "sk-03",
+    "name": "PUPPP Rash",
+    "category": "Skin/Hair",
+    "keywords": [
+      "itchy belly",
+      "red bumps on stomach",
+      "severe itching",
+      "hives on belly",
+      "puppp"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "medium",
+    "description": "Pruritic urticarial papules and plaques of pregnancy. An intensely itchy rash that usually starts in stretch marks on the belly in the 3rd trimester.",
+    "advice": "Use oatmeal baths, aloe vera, or unscented moisturizers. Ask your doctor about safe anti-itch creams or antihistamines.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "sk-04",
+    "name": "Melasma (Mask of Pregnancy)",
+    "category": "Skin/Hair",
+    "keywords": [
+      "dark patches on face",
+      "skin darkening",
+      "brown spots on face",
+      "chloasma"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Dark, blotchy patches that appear on the face (usually forehead, cheeks, upper lip) due to hormonal changes and sun exposure.",
+    "advice": "Use sunscreen, wear a hat, and avoid excessive sun exposure. It usually fades postpartum.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "sk-05",
+    "name": "Itchy Skin",
+    "category": "Skin/Hair",
+    "keywords": [
+      "itching all over",
+      "scratchy skin",
+      "belly itching",
+      "dry skin"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Common on the stretching belly. However, severe itching, especially on palms and soles without a rash, needs checking.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Intense itching on the palms of hands and soles of feet (especially at night) - could be Cholestasis, a liver condition."
+    ]
+  },
+  {
+    "id": "sk-06",
+    "name": "Acne",
+    "category": "Skin/Hair",
+    "keywords": [
+      "pimples",
+      "breakouts",
+      "hormonal acne",
+      "spots on face",
+      "pregnancy glow gone"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Hormonal surges can increase sebum (oil) production, leading to breakouts, especially in the 1st trimester.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "sk-07",
+    "name": "Hair Growth/Loss",
+    "category": "Skin/Hair",
+    "keywords": [
+      "thick hair",
+      "hair falling out",
+      "extra body hair",
+      "hairy belly",
+      "postpartum hair loss prep"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Hormones can make scalp hair thicker and slow down shedding. You might also notice more hair on your belly or face.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "sk-08",
+    "name": "Nail Changes",
+    "category": "Skin/Hair",
+    "keywords": [
+      "brittle nails",
+      "fast growing nails",
+      "strong nails",
+      "breaking nails"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Pregnancy hormones can make nails grow faster, but for some, they become more brittle or develop grooves.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "sk-09",
+    "name": "Skin Tags",
+    "category": "Skin/Hair",
+    "keywords": [
+      "extra skin pieces",
+      "neck tags",
+      "armpit tags",
+      "fleshy bumps"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Small, harmless flaps of skin that often appear in areas where skin rubs together, like the neck, armpits, or groin.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "sk-10",
+    "name": "Spider Veins",
+    "category": "Skin/Hair",
+    "keywords": [
+      "red veins",
+      "purple lines on legs",
+      "spider web veins",
+      "broken capillaries"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Tiny, red or purple blood vessels that appear on the face, neck, or legs due to increased blood volume and hormones.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "nm-11",
+    "name": "Vivid Dreams",
+    "category": "Neurological/Mood",
+    "keywords": [
+      "crazy dreams",
+      "nightmares",
+      "weird dreams",
+      "intense dreams",
+      "remembering dreams"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Hormonal fluctuations, interrupted sleep, and processing the major life change of having a baby can cause extremely vivid or strange dreams.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "nm-12",
+    "name": "Pregnancy Brain",
+    "category": "Neurological/Mood",
+    "keywords": [
+      "forgetful",
+      "brain fog",
+      "mommy brain",
+      "scatterbrained",
+      "can't remember",
+      "poor concentration"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "A common feeling of forgetfulness or lack of focus, likely related to fatigue, hormone changes, and stress.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "nm-13",
+    "name": "Mood Swings",
+    "category": "Neurological/Mood",
+    "keywords": [
+      "crying easily",
+      "emotional",
+      "angry quickly",
+      "up and down",
+      "weepy",
+      "hormonal"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Rapid changes in mood caused by fluctuating hormones, physical discomfort, and the emotional impact of impending parenthood.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "nm-14",
+    "name": "Lightheadedness",
+    "category": "Neurological/Mood",
+    "keywords": [
+      "dizzy",
+      "faint",
+      "spinning",
+      "woozy",
+      "seeing stars",
+      "about to pass out"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Caused by changes in circulation; your blood vessels dilate, and blood pressure drops. Later on, the baby can press on major blood vessels.",
+    "advice": "Get up slowly from sitting or lying down. Eat regularly to keep blood sugar stable. Don't stand for long periods.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "nm-15",
+    "name": "Headaches",
+    "category": "Neurological/Mood",
+    "keywords": [
+      "head pain",
+      "migraine",
+      "tension headache",
+      "forehead pain",
+      "throbbing head"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Common in the 1st trimester due to hormones and blood volume changes. Can also be caused by caffeine withdrawal or dehydration.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe headache that won't go away",
+      "Headache accompanied by vision changes or swelling (signs of preeclampsia)"
+    ]
+  },
+  {
+    "id": "nm-16",
+    "name": "Anxiety",
+    "category": "Neurological/Mood",
+    "keywords": [
+      "worried",
+      "nervous",
+      "stressed",
+      "panic",
+      "fear of birth",
+      "overthinking"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "medium",
+    "description": "Normal to feel anxious about the baby's health, labor, or parenting. If it becomes overwhelming, it needs addressing.",
+    "advice": "Talk to your doctor, a therapist, or a support group. Treatment options are available and safe during pregnancy.",
+    "red_flags": [
+      "Thoughts of harming yourself or the baby",
+      "Inability to function in daily life"
+    ]
+  },
+  {
+    "id": "nm-17",
+    "name": "Depression",
+    "category": "Neurological/Mood",
+    "keywords": [
+      "sadness",
+      "hopeless",
+      "no energy",
+      "crying all the time",
+      "prenatal depression"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "medium",
+    "description": "Not just \"baby blues.\" Persistent feelings of sadness, worthlessness, or lack of interest in things you usually enjoy.",
+    "advice": "Talk to your doctor, a therapist, or a support group. Treatment options are available and safe during pregnancy.",
+    "red_flags": [
+      "Thoughts of harming yourself or the baby",
+      "Inability to function in daily life"
+    ]
+  },
+  {
+    "id": "nm-18",
+    "name": "Restless Leg Syndrome",
+    "category": "Neurological/Mood",
+    "keywords": [
+      "legs crawling",
+      "need to move legs",
+      "leg twitches at night",
+      "can't keep legs still",
+      "rls"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "An irresistible urge to move the legs, often accompanied by a crawling or tingling sensation, usually worse at night.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "nm-19",
+    "name": "Insomnia",
+    "category": "Neurological/Mood",
+    "keywords": [
+      "can't sleep",
+      "waking up",
+      "tossing and turning",
+      "up all night",
+      "pregnancy insomnia"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Difficulty falling or staying asleep due to physical discomfort, frequent urination, anxiety, or vivid dreams.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "nm-20",
+    "name": "Hot Flashes",
+    "category": "Neurological/Mood",
+    "keywords": [
+      "sweating",
+      "feeling too hot",
+      "sudden heat",
+      "overheating",
+      "night sweats"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Sudden feelings of intense heat, often accompanied by sweating, caused by hormonal fluctuations and increased metabolism.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "lp-21",
+    "name": "Braxton Hicks",
+    "category": "Late Pregnancy",
+    "keywords": [
+      "practice contractions",
+      "belly tightening",
+      "fake labor",
+      "stomach gets hard",
+      "uterus flexing",
+      "painless contractions"
+    ],
+    "trimester": [
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Practice contractions where the uterus tightens and relaxes. They prepare your body for labor but don't dilate the cervix.",
+    "advice": "Change positions, drink water, or take a warm bath. They should stop or become less frequent.",
+    "red_flags": [
+      "Contractions become regular, stronger, and closer together (real labor)"
+    ]
+  },
+  {
+    "id": "lp-22",
+    "name": "Lightning Crotch",
+    "category": "Late Pregnancy",
+    "keywords": [
+      "shooting pain in vagina",
+      "zap in crotch",
+      "sharp pain down there",
+      "electric shock in pelvis",
+      "nerve pain in cervix"
+    ],
+    "trimester": [
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Sudden, sharp, shooting pain in the pelvis, vagina, or rectum. Often caused by the baby's head pressing on nerves as they drop lower.",
+    "advice": "Change positions, wear a supportive belly band, and try to rest.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "lp-23",
+    "name": "Nesting Instinct",
+    "category": "Late Pregnancy",
+    "keywords": [
+      "need to clean",
+      "organizing",
+      "burst of energy",
+      "preparing house",
+      "can't stop cleaning"
+    ],
+    "trimester": [
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "A sudden burst of energy and an intense urge to clean, organize, and prepare your home for the baby's arrival.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "lp-24",
+    "name": "Colostrum Leakage",
+    "category": "Late Pregnancy",
+    "keywords": [
+      "leaking breasts",
+      "yellow fluid from nipples",
+      "boobs leaking",
+      "early milk",
+      "crusty nipples"
+    ],
+    "trimester": [
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Your breasts may start producing and leaking colostrum, the nutrient-rich first milk, weeks or months before birth.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "lp-25",
+    "name": "Baby Dropping (Lightening)",
+    "category": "Late Pregnancy",
+    "keywords": [
+      "baby feels lower",
+      "easier to breathe",
+      "more pelvic pressure",
+      "waddle",
+      "engaged"
+    ],
+    "trimester": [
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "When the baby settles deeper into your pelvis in preparation for birth. Breathing may get easier, but pelvic pressure increases.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "lp-26",
+    "name": "Mucus Plug Loss",
+    "category": "Late Pregnancy",
+    "keywords": [
+      "bloody show",
+      "snotty discharge",
+      "thick discharge",
+      "pink jelly",
+      "losing plug"
+    ],
+    "trimester": [
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Passing the thick plug of mucus that sealed the cervix. It can be clear, pink, or slightly bloody. It means the cervix is changing.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "lp-27",
+    "name": "Pelvic Pressure",
+    "category": "Late Pregnancy",
+    "keywords": [
+      "heavy feeling down there",
+      "feels like baby will fall out",
+      "bowling ball feeling",
+      "pressure in vagina"
+    ],
+    "trimester": [
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "A feeling of heaviness or pressure in the pelvis or vagina, caused by the baby's weight as they move lower.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "lp-28",
+    "name": "Swollen Feet and Ankles",
+    "category": "Late Pregnancy",
+    "keywords": [
+      "cankles",
+      "puffy feet",
+      "shoes don't fit",
+      "edema",
+      "water retention"
+    ],
+    "trimester": [
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Mild swelling is very common due to extra fluid in the body and pressure from the uterus on veins returning blood from the legs.",
+    "advice": "Elevate your feet when sitting. Wear comfortable shoes. Drink plenty of water.",
+    "red_flags": [
+      "Sudden or severe swelling in hands, face, or around eyes (preeclampsia)",
+      "Swelling in only one leg accompanied by pain or redness (blood clot)"
+    ]
+  },
+  {
+    "id": "lp-29",
+    "name": "Shortness of Breath",
+    "category": "Late Pregnancy",
+    "keywords": [
+      "can't catch breath",
+      "winded easily",
+      "breathing hard",
+      "heavy breathing",
+      "baby in ribs"
+    ],
+    "trimester": [
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "The growing uterus pushes up against your diaphragm, giving your lungs less room to expand. Usually improves when the baby drops.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "lp-30",
+    "name": "Clumsiness",
+    "category": "Late Pregnancy",
+    "keywords": [
+      "tripping",
+      "dropping things",
+      "off balance",
+      "wobbly",
+      "unsteady"
+    ],
+    "trimester": [
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Changes in your center of gravity and the hormone relaxin loosening your joints can make you feel more unsteady on your feet.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "ot-31",
+    "name": "Nosebleeds",
+    "category": "Other",
+    "keywords": [
+      "bloody nose",
+      "nose bleeding",
+      "blood from nose"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Increased blood volume and hormonal changes can make the delicate blood vessels in your nose swell and break more easily.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "ot-32",
+    "name": "Stuffy Nose (Rhinitis)",
+    "category": "Other",
+    "keywords": [
+      "congested",
+      "blocked nose",
+      "pregnancy rhinitis",
+      "sniffles",
+      "can't breathe through nose"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Hormones cause the mucous membranes in your nose to swell and produce more mucus, leading to a constant stuffy feeling.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "ot-33",
+    "name": "Bleeding Gums",
+    "category": "Other",
+    "keywords": [
+      "gums bleed when brushing",
+      "sore gums",
+      "gingivitis",
+      "red gums",
+      "swollen gums"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Pregnancy hormones make your gums more sensitive to the bacteria in plaque, leading to inflammation and bleeding.",
+    "advice": "Use a soft-bristled toothbrush. Floss gently daily. Keep your regular dental checkups.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "ot-34",
+    "name": "Increased Saliva (Ptyalism)",
+    "category": "Other",
+    "keywords": [
+      "too much spit",
+      "drooling",
+      "excess saliva",
+      "spitting a lot"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "An excessive production of saliva, often associated with severe morning sickness or heartburn. Can be quite bothersome.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "ot-35",
+    "name": "Vaginal Discharge (Leukorrhea)",
+    "category": "Other",
+    "keywords": [
+      "white discharge",
+      "milky discharge",
+      "wet underwear",
+      "extra discharge",
+      "leukorrhea"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "An increase in thin, white, milky, and mild-smelling discharge is normal and helps prevent infections traveling from the vagina to the womb.",
+    "advice": "Wear breathable cotton underwear. Use a panty liner if needed. Do not douche.",
+    "red_flags": [
+      "Discharge that is green, yellow, foul-smelling, or accompanied by itching/burning (signs of infection)"
+    ]
+  },
+  {
+    "id": "ot-36",
+    "name": "Leg Cramps",
+    "category": "Other",
+    "keywords": [
+      "charley horse",
+      "calf cramp",
+      "leg spasm",
+      "waking up with leg pain",
+      "muscle knot"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Painful, involuntary muscle contractions, usually in the calves, that often happen at night. The exact cause is unclear but may be related to weight or circulation.",
+    "advice": "Stretch your calf muscle before bed. If a cramp hits, flex your foot upward (toes toward your nose). Stay hydrated.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "ot-37",
+    "name": "Snoring",
+    "category": "Other",
+    "keywords": [
+      "snoring loud",
+      "breathing loud at night",
+      "partner complaining about snoring"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Swollen nasal passages and weight gain can lead to snoring, even if you've never snored before.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "ot-38",
+    "name": "Vision Changes",
+    "category": "Other",
+    "keywords": [
+      "blurry eyes",
+      "dry eyes",
+      "contacts don't fit",
+      "vision slightly off"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Fluid retention can slightly change the shape of your cornea, making your vision blurry or making contacts uncomfortable.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "ot-39",
+    "name": "Changes in Pigmentation",
+    "category": "Other",
+    "keywords": [
+      "darkened areolas",
+      "dark freckles",
+      "moles getting darker"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Increased melanin production can cause areolas, freckles, and moles to darken. Always have new or changing moles checked.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
+  },
+  {
+    "id": "ot-40",
+    "name": "Heart Palpitations",
+    "category": "Other",
+    "keywords": [
+      "heart racing",
+      "fluttering heart",
+      "fast heartbeat",
+      "skipped beat"
+    ],
+    "trimester": [
+      1,
+      2,
+      3
+    ],
+    "is_normal": true,
+    "severity": "low",
+    "description": "Your heart has to work harder and pump more blood. Occasional palpitations are normal, but frequent or sustained ones should be checked.",
+    "advice": "Rest, stay hydrated, and mention it to your doctor at your next visit.",
+    "red_flags": [
+      "Severe pain",
+      "Fever",
+      "Bleeding"
+    ]
   }
 ]
