@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rd-lig-01",
+    "name": "Round Ligament Pain",
+    "keywords": ["sharp pain", "side pain", "stretching", "sneeze"],
+    "severity": "low",
+    "is_normal": true,
+    "advice": "Normal stretching of the uterus. Move slowly and try pelvic tilts."
+  },
+  {
+    "id": "pre-01",
+    "name": "Preeclampsia Warning",
+    "keywords": ["blurred vision", "severe headache", "swelling", "upper pain"],
+    "severity": "high",
+    "is_normal": false,
+    "advice": "URGENT: Contact your healthcare provider immediately."
+  }
+]
