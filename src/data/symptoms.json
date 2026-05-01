@@ -2,17 +2,201 @@
   {
     "id": "rd-lig-01",
     "name": "Round Ligament Pain",
-    "keywords": ["sharp pain", "side pain", "stretching", "sneeze"],
+    "keywords": ["sharp pain", "side pain", "stretching", "sneeze", "groin", "stabbing pain", "lower belly pain"],
     "severity": "low",
     "is_normal": true,
-    "advice": "Normal stretching of the uterus. Move slowly and try pelvic tilts."
+    "advice": "Normal stretching of the uterus. Move slowly, try pelvic tilts, and rest on your side."
   },
   {
     "id": "pre-01",
     "name": "Preeclampsia Warning",
-    "keywords": ["blurred vision", "severe headache", "swelling", "upper pain"],
+    "keywords": ["blurred vision", "severe headache", "swelling", "upper pain", "seeing spots", "face swelling", "sudden weight gain", "high blood pressure"],
     "severity": "high",
     "is_normal": false,
-    "advice": "URGENT: Contact your healthcare provider immediately."
+    "advice": "URGENT: This can be a sign of preeclampsia, a serious condition. Contact your healthcare provider or go to the emergency room immediately."
+  },
+  {
+    "id": "nausea-01",
+    "name": "Morning Sickness / Nausea",
+    "keywords": ["nausea", "vomiting", "throwing up", "queasy", "sick to stomach", "morning sickness"],
+    "severity": "low",
+    "is_normal": true,
+    "advice": "Very common, especially in the first trimester. Eat small, frequent meals, try ginger or vitamin B6. If you cannot keep any fluids down for 24 hours, contact your doctor as this may be Hyperemesis Gravidarum."
+  },
+  {
+    "id": "fatigue-01",
+    "name": "Fatigue",
+    "keywords": ["tired", "exhausted", "sleepy", "no energy", "fatigue", "lethargic"],
+    "severity": "low",
+    "is_normal": true,
+    "advice": "Normal due to hormonal changes. Rest when you can, eat a balanced diet, and listen to your body."
+  },
+  {
+    "id": "braxton-01",
+    "name": "Braxton Hicks Contractions",
+    "keywords": ["tightening", "fake contractions", "belly hard", "painless contractions", "practice contractions"],
+    "severity": "low",
+    "is_normal": true,
+    "advice": "These are 'practice' contractions and are usually irregular and painless. Drink water and change positions. If they become regular, painful, or occur more than 4-6 times an hour before 37 weeks, contact your doctor."
+  },
+  {
+    "id": "preterm-01",
+    "name": "Preterm Labor Signs",
+    "keywords": ["regular contractions", "water broke", "pelvic pressure", "leaking fluid", "back pain rhythmic", "cramping before 37 weeks"],
+    "severity": "high",
+    "is_normal": false,
+    "advice": "URGENT: These are signs of preterm labor. Contact your healthcare provider or head to labor and delivery immediately."
+  },
+  {
+    "id": "movement-01",
+    "name": "Decreased Fetal Movement",
+    "keywords": ["baby not moving", "less kicks", "decreased movement", "stopped kicking", "quiet baby"],
+    "severity": "high",
+    "is_normal": false,
+    "advice": "URGENT: A noticeable decrease in fetal movement requires immediate medical evaluation. Go to labor and delivery or contact your doctor right away."
+  },
+  {
+    "id": "heartburn-01",
+    "name": "Heartburn & Acid Reflux",
+    "keywords": ["heartburn", "acid", "reflux", "burning chest", "indigestion"],
+    "severity": "low",
+    "is_normal": true,
+    "advice": "Common in pregnancy due to hormones and physical pressure. Avoid spicy/greasy foods, eat smaller meals, and don't lie down right after eating. Consult your doctor for safe antacids."
+  },
+  {
+    "id": "swelling-01",
+    "name": "Mild Edema (Swelling)",
+    "keywords": ["swollen feet", "swollen ankles", "puffy feet", "edema"],
+    "severity": "low",
+    "is_normal": true,
+    "advice": "Mild swelling in the feet and ankles is normal. Elevate your feet, wear comfortable shoes, and stay hydrated. If swelling is sudden, severe, or in your hands/face, it could be a sign of preeclampsia (contact doctor)."
+  },
+  {
+    "id": "dvt-01",
+    "name": "Deep Vein Thrombosis (Blood Clot)",
+    "keywords": ["severe leg pain", "calf pain", "red leg", "hot calf", "one leg swollen"],
+    "severity": "high",
+    "is_normal": false,
+    "advice": "URGENT: Pain, redness, and swelling in one leg (often the calf) can be a sign of a blood clot. Seek emergency medical care immediately."
+  },
+  {
+    "id": "bleeding-01",
+    "name": "Vaginal Bleeding (Severe)",
+    "keywords": ["heavy bleeding", "red blood", "passing clots", "gushing blood", "hemorrhage"],
+    "severity": "high",
+    "is_normal": false,
+    "advice": "URGENT: Heavy or bright red vaginal bleeding is an emergency. Contact your doctor or go to the emergency room immediately."
+  },
+  {
+    "id": "spotting-01",
+    "name": "Light Spotting",
+    "keywords": ["spotting", "brown discharge", "pink discharge", "light bleeding"],
+    "severity": "medium",
+    "is_normal": false,
+    "advice": "Light spotting can be common, especially early in pregnancy, but should always be evaluated by a healthcare professional to rule out complications. Call your doctor."
+  },
+  {
+    "id": "uti-01",
+    "name": "Urinary Tract Infection",
+    "keywords": ["burning pee", "pain when urinating", "frequent peeing but little comes out", "blood in urine", "uti"],
+    "severity": "medium",
+    "is_normal": false,
+    "advice": "May indicate a UTI, which needs treatment during pregnancy to prevent kidney infections. Contact your doctor for a urine test."
+  },
+  {
+    "id": "urination-01",
+    "name": "Frequent Urination",
+    "keywords": ["peeing a lot", "always need to pee", "frequent bathroom trips"],
+    "severity": "low",
+    "is_normal": true,
+    "advice": "Very normal as the uterus presses on the bladder. Keep drinking plenty of water, but if it's accompanied by burning or pain, call your doctor."
+  },
+  {
+    "id": "ectopic-01",
+    "name": "Ectopic Pregnancy Warning",
+    "keywords": ["severe unilateral pain", "shoulder pain", "sharp pain early pregnancy", "dizziness and pain"],
+    "severity": "high",
+    "is_normal": false,
+    "advice": "URGENT: Severe pain on one side early in pregnancy, sometimes with shoulder pain or dizziness, can indicate an ectopic pregnancy. Seek emergency care immediately."
+  },
+  {
+    "id": "cholestasis-01",
+    "name": "Cholestasis of Pregnancy",
+    "keywords": ["severe itching", "itchy hands", "itchy feet", "itching no rash", "intense itch"],
+    "severity": "high",
+    "is_normal": false,
+    "advice": "URGENT: Severe itching, particularly on the palms of hands and soles of feet without a rash, can indicate a liver condition called Cholestasis. Contact your doctor immediately for a blood test."
+  },
+  {
+    "id": "backache-01",
+    "name": "Lower Back Pain",
+    "keywords": ["backache", "lower back pain", "sore back", "aching back"],
+    "severity": "low",
+    "is_normal": true,
+    "advice": "Normal due to shifting center of gravity and relaxing ligaments. Practice good posture, use supportive shoes, and try prenatal yoga or a heating pad (on low)."
+  },
+  {
+    "id": "sciatica-01",
+    "name": "Sciatica",
+    "keywords": ["shooting pain leg", "buttock pain", "numb leg", "tingling leg", "sciatica"],
+    "severity": "medium",
+    "is_normal": false,
+    "advice": "Pressure on the sciatic nerve can cause shooting pain down the leg. Talk to your doctor or a physical therapist for safe stretches and relief options."
+  },
+  {
+    "id": "constipation-01",
+    "name": "Constipation",
+    "keywords": ["can't poop", "hard stool", "constipated", "bloated"],
+    "severity": "low",
+    "is_normal": true,
+    "advice": "Hormones slow down digestion. Drink lots of water, eat high-fiber foods, and stay active. Consult your doctor before taking any laxatives."
+  },
+  {
+    "id": "breasts-01",
+    "name": "Breast Tenderness",
+    "keywords": ["sore breasts", "tender nipples", "heavy breasts", "sensitive breasts"],
+    "severity": "low",
+    "is_normal": true,
+    "advice": "Very normal, often one of the first signs of pregnancy. Wear a supportive, comfortable bra (like a sports bra or maternity bra)."
+  },
+  {
+    "id": "yeast-01",
+    "name": "Yeast Infection",
+    "keywords": ["vaginal itching", "white discharge", "clumpy discharge", "cottage cheese discharge"],
+    "severity": "medium",
+    "is_normal": false,
+    "advice": "Yeast infections are common in pregnancy due to pH changes. Contact your doctor for a safe over-the-counter or prescription treatment."
+  },
+  {
+    "id": "anemia-01",
+    "name": "Anemia / Iron Deficiency",
+    "keywords": ["dizzy", "lightheaded", "pale", "weak", "fainting"],
+    "severity": "medium",
+    "is_normal": false,
+    "advice": "Dizziness and weakness can be signs of anemia (low iron) or low blood sugar. Sit or lie down immediately. Contact your doctor to have your iron levels checked."
+  },
+  {
+    "id": "carpal-01",
+    "name": "Carpal Tunnel Syndrome",
+    "keywords": ["numb hands", "tingling fingers", "wrist pain", "hands falling asleep"],
+    "severity": "low",
+    "is_normal": true,
+    "advice": "Swelling in pregnancy can compress nerves in the wrist. Try wrist splints, especially at night, and mention it to your doctor at your next visit."
+  },
+  {
+    "id": "headache-01",
+    "name": "Mild Headaches",
+    "keywords": ["headache", "head hurts", "tension headache"],
+    "severity": "low",
+    "is_normal": true,
+    "advice": "Common due to hormones, stress, or dehydration. Drink water, rest, and try a cold compress. If the headache is severe and doesn't go away, it could be a sign of preeclampsia—contact your doctor."
+  },
+  {
+    "id": "depression-01",
+    "name": "Prenatal Depression / Anxiety",
+    "keywords": ["sad", "crying", "anxious", "panic", "hopeless", "depressed"],
+    "severity": "medium",
+    "is_normal": false,
+    "advice": "Mental health struggles during pregnancy are common but require support. Please talk to your healthcare provider or a mental health professional for help and resources."
   }
 ]
